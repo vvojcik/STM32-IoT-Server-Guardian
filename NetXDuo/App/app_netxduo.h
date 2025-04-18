@@ -1,0 +1,61 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file    app_netxduo.h
+  * @author  MCD Application Team
+  * @brief   NetXDuo applicative header file
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __APP_NETXDUO_H__
+#define __APP_NETXDUO_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes ------------------------------------------------------------------*/
+#include "nx_api.h"
+
+/* Private includes ----------------------------------------------------------*/
+
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
+
+/* USER CODE END ET */
+
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
+
+/* USER CODE END EC */
+
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
+
+/* USER CODE END EM */
+
+/* Exported functions prototypes ---------------------------------------------*/
+UINT MX_NetXDuo_Init(VOID *memory_ptr);
+
+/* USER CODE BEGIN EFP */
+
+/* USER CODE END EFP */
+
+/* Private defines -----------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* USER CODE BEGIN 1 */
+
+/* USER CODE END 1 */
+
+#ifdef __cplusplus
+}
+#endif
+#endif /* __APP_NETXDUO_H__ */
