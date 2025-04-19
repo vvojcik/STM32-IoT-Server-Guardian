@@ -1,0 +1,12 @@
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:23:6:mx_wifi_alloc_init	2
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:37:7:mx_wifi_malloc	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:59:6:mx_wifi_free	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:72:12:mx_net_buffer_alloc	6
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:120:6:mx_net_buffer_free	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:151:6:mx_wifi_thread_init	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:174:6:mx_wifi_thread_deinit	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:185:6:mx_wifi_thread_terminate	1
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:191:6:mx_wifi_fifo_init	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:209:6:mx_wifi_fifo_deinit	3
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:220:6:mx_wifi_fifo_push	2
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:230:7:mx_wifi_fifo_pop	3

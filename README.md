@@ -65,3 +65,30 @@ Before building the project, update the placeholders in the application headers:
 1. Set your Wi-Fi credentials in `Core/Inc/mx_wifi_conf.h`.
 2. Configure your specific ThingSpeak API Keys (Write/Read) in `NetXDuo/App/app_netxduo.h`.
 3. Make sure the custom shield is properly connected to the Arduino-compatible headers (D0–D15, A0–A3) as described in the KiCad schematic.
+
+---
+
+## 🛠️ How to Build & Run (Standalone Setup)
+
+This repository is fully self-contained. All necessary HAL drivers, Azure RTOS/ThreadX kernels, and NetXDuo network stacks are included directly within the project folders. No external MCU firmware packages are required.
+
+Follow these simple steps to launch the project:
+
+### 1. Import into STM32CubeIDE
+
+1. Open **STM32CubeIDE** (v1.15.0 or newer recommended).
+2. Go to **File → Import... → General → Existing Projects into Workspace**.
+3. Click **Browse...** next to *Select root directory* and choose the cloned repository folder.
+4. In the projects list, check **only** the main project: `Nx_MQTT_Client`. Leave any standalone middleware samples unchecked.
+5. Click **Finish**.
+
+### 2. Compile the Project
+
+1. Right-click on the `Nx_MQTT_Client` project in the *Project Explorer* and select **Clean Project**.
+2. Click the **Hammer icon (Build Project)** on the top toolbar or press `Ctrl + B`.
+3. The project will compile locally, creating a fresh, independent build without any broken absolute path dependencies.
+
+### 3. Flash to Board
+
+1. Connect your **STM32 B-U585I-IOT02A** board to your PC via USB (ST-LINK port).
+2. Right-click on the project → **Run As → STM32 Cortex-M C/C++ Application**.

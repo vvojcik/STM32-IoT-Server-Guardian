@@ -1,0 +1,7 @@
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:118:22:_nx_crypto_sha512_initialize	16	static
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:237:21:_nx_crypto_sha512_update	112	static
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:365:21:_nx_crypto_sha512_digest_calculate	56	static
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:501:21:_nx_crypto_sha512_process_buffer	592	static
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:625:22:_nx_crypto_method_sha512_init	24	static
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:697:22:_nx_crypto_method_sha512_cleanup	16	static
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/crypto_libraries/src/nx_crypto_sha5.c:774:22:_nx_crypto_method_sha512_operation	32	static

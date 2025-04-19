@@ -1,0 +1,13 @@
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:113:6:_nx_secure_x509_certificate_parse	10
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:299:13:_nx_secure_x509_extract_oid_data	16
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:492:13:_nx_secure_x509_parse_cert_data	15
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:698:13:_nx_secure_x509_parse_version	4
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:788:13:_nx_secure_x509_parse_serial_num	4
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:875:13:_nx_secure_x509_parse_signature_algorithm	9
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1000:13:_nx_secure_x509_parse_issuer	4
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1083:13:_nx_secure_x509_parse_validity	12
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1206:13:_nx_secure_x509_parse_subject	4
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1291:13:_nx_secure_x509_parse_public_key	14
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1478:13:_nx_secure_x509_parse_unique_ids	11
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1624:13:_nx_secure_x509_parse_extensions	8
+C:/Users/admin/Desktop/kopia_stm/STM32CubeU5/Projects/B-U585I-IOT02A/Applications/NetXDuo/Nx_MQTT_Client/Middlewares/ST/netxduo/nx_secure/src/nx_secure_x509.c:1748:13:_nx_secure_x509_parse_signature_data	4
