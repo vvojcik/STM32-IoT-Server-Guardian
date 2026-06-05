@@ -92,3 +92,67 @@ Follow these simple steps to launch the project:
 
 1. Connect your **STM32 B-U585I-IOT02A** board to your PC via USB (ST-LINK port).
 2. Right-click on the project → **Run As → STM32 Cortex-M C/C++ Application**.
+
+---
+
+## 📡 MQTT Stack Overview (NetXDuo)
+
+The network stack is based on **Azure RTOS NetXDuo** and uses the MQTT protocol in **encrypted mode (TLS v1.2)**. The application spins up three threads:
+
+- **AppMainThread** — starts the DHCP client, waits for IP resolution, then resumes the SNTP thread.
+- **AppSNTPThread** — synchronizes time with an NTP server (required for x509 certificate validation), then resumes the MQTT thread.
+- **AppMQTTClientThread** — resolves the broker hostname via DNS, connects securely to the MQTT broker on port **8883**, subscribes to the configured topic, and publishes/receives messages.
+
+### Expected Serial Output
+
+Connect a terminal at **115200 baud, 8N1** (USART1) to see:
+
+```
+MQTT client connected to broker < test.mosquitto.org > at PORT 8883 :
+Message 1 received: TOPIC = Temperature, MESSAGE = 34
+Message 2 received: TOPIC = Temperature, MESSAGE = 35
+...
+client disconnected from server
+```
+
+The **green LED** toggles after all messages are received successfully. The **red LED** toggles on any error.
+
+---
+
+## 🔒 TLS / x509 Certificate Setup
+
+To enable the encrypted connection to the MQTT broker, add the server's CA certificate:
+
+1. Download the CA certificate — e.g. `mosquitto.org.der` from [test.mosquitto.org](https://test.mosquitto.org).
+2. Convert it to a C header:
+   ```bash
+   xxd.exe -i mosquitto.org.der > mosquitto.cert.h
+   ```
+3. Place the generated file under `NetXDuo/App/`.
+4. Set `MOSQUITTO_CERT_FILE` in `app_netxduo.h` to your certificate filename.
+
+---
+
+## ⚠️ Known Limitations
+
+- **Topic name length** is capped at `NXD_MQTT_MAX_TOPIC_NAME_LENGTH = 12` by default. Increase this value manually in `nxd_mqtt_client.h` if your topic name is longer.
+- **Message length** is capped at `NXD_MQTT_MAX_MESSAGE_LENGTH = 32` by default. Increase this value in `nxd_mqtt_client.h` if needed.
+
+---
+
+## 🔧 Wi-Fi Module Firmware
+
+This project requires **EMW3080B MXCHIP Wi-Fi module firmware V2.3.4**. The board ships with V2.1.11, which is **not backwards compatible** with the V2.3.4 driver used here.
+
+To upgrade the module firmware:
+
+1. Visit [X-WIFI-EMW3080B](https://www.st.com/en/development-tools/x-wifi-emw3080b.html).
+2. Flash `EMW3080update_B-U585I-IOT02A-RevC_V2.3.4_SPI.bin` (found under the `V2.3.4/SPI` folder).
+
+> The patched driver is already included in this repository under `Drivers/BSP/Components/mx_wifi/`.
+
+---
+
+## 🏷️ Keywords
+
+`RTOS` `ThreadX` `NetXDuo` `Azure RTOS` `MQTT` `TLS` `DNS` `MXCHIP` `EMW3080` `Wi-Fi` `STM32U5` `IoT` `Embedded C`
